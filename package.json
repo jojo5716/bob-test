@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf example/dist && mkdir example/dist",
     "dist": "webpack --config webpack.prod.js",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "prepare": "npm run dist",
     "start:front": "API_DOMAIN='http://localhost:8080' webpack-dev-server --config webpack.dev.js",
     "start:server": "MONGO_HOST='localhost' MONGO_DB='bob' NODE_ENV='development' JWT_SECRET='8f9sdf9sdhf' SESSION_SECRET='123456798asd' nodemon --exec babel-node server/",

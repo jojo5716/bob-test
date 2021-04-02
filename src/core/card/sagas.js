@@ -15,7 +15,6 @@ import {
     FETCH_CARD_LIST,
     SAVE_CARDS,
 } from '@src/constants/actions';
-import { EDIT_PRODUCT_INVENTORY_URL, PRODUCTS_INVENTORY_URL } from '@src/constants/urls';
 
 export default function* root() {
     yield all([

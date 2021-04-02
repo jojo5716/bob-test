@@ -3,8 +3,11 @@ import {
 } from '@src/constants/actions';
 
 
-export const fetchCards = () => ({
+const fetchCards = () => ({
     type: FETCH_CARD_LIST,
     payload: {},
 });
 
+export default {
+    fetchCards,
+};

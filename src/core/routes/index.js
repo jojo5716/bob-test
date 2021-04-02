@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import App from '@src/containers/app/AppConnector';
 import Home from '@src/containers/home/HomeConnector';
@@ -9,24 +9,21 @@ import {
 } from '@src/constants/urls';
 
 
-
 const renderContainer = ({
     Component,
     props,
-}) => {
-    return (
-        <App>
-            <Component {...props} />
-        </App>
-    );
-}
+}) => (
+    <App>
+        <Component {...props} />
+    </App>
+);
 
-const Routes = ({ selectedContainer, selectedContainerParent, updateSelectedContainer }) => (
+const Routes = () => (
     <Switch>
         <Route exact path={HOME_URL} render={props => renderContainer({
             Component: Home,
             props,
-        })} />        
+        })} />
     </Switch>
 );
 

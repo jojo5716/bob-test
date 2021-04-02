@@ -1,6 +1,4 @@
 /* eslint-disable no-param-reassign */
-const mongoose = require('mongoose');
-
 const db = require('../models');
 
 

@@ -22,7 +22,6 @@ class Card extends React.Component {
 export default Card;
 
 Card.propTypes = {
-};
-
-Card.defaultProps = {
+    name: PropTypes.string,
+    bags: PropTypes.number,
 };

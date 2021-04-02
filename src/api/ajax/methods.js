@@ -25,7 +25,7 @@ module.exports = {
         };
 
         return fetch(`${URL_DOMAIN}${url}`, options)
-            .then(response => response.json())
+            .then(response => response.json());
     },
 
     /**
@@ -43,6 +43,6 @@ module.exports = {
             },
             body: bodyQuerystring,
         })
-            .then(response => response.json())
+            .then(response => response.json());
     },
 };

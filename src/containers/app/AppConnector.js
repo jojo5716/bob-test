@@ -1,14 +1,14 @@
 import {
-    connect
+    connect,
 } from 'react-redux';
 
 import {
-    fetchCards
+    fetchCards,
 } from '@core/card/actions';
 import App from './App';
 
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = () => ({});
 const actionToProps = {
     fetchCards,
 };

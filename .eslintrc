@@ -43,7 +43,12 @@
 	"settings": {
 		"import/resolver": {
 			"alias": [
+				["@api", "./src/api/"],
+				["@components", "./src/components/"],
+				["@constants", "./src/constants/"],
+				["@core", "./src/core/"],
 				["@src", "./src/"],
+				["@views", "./src/views/"]	
 			]
 		}
 	}

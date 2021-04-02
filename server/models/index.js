@@ -1,14 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const {
-    MONGO_DB,
-    MONGO_HOST = 'localhost',
-    MONGO_PORT = 27017,
-} = process.env;
-
-const MONGO_URL = `mongodb://${MONGO_HOST}:${MONGO_PORT}/${MONGO_DB}`;
-
+const MONGO_URL = `mongodb://localhost:27017/bob_test`;
 const db = {};
 
 db.mongoose = mongoose;

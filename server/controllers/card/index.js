@@ -8,7 +8,7 @@ const router = express.Router();
 
 
 router
-    .get('/list/', async (req, res) => {
+    .get('/list/', async (_, res) => {
         const cards = await cardApi.findAll();
 
         res.json(

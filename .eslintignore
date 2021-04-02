@@ -1,0 +1,9 @@
+**/cypress/**
+**/coverage/**
+**/dist/**
+**/builds/**
+**/example/__dist__/**
+**/mocks/**
+**/node_modules/**
+**/scripts/**
+webpack.*.js

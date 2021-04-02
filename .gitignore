@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+.cache-loader/
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Dist folder
+dist
+uploads/
+!uploads/README.md
+
+# Sonar report
+.sonar
+
+#IDES
+.vscode
+.idea
+.history
+
+# MAC
+.DS_Store
+
+deploy/builds
+example/__dist__
+v8-compile-cache-1000/
+
+# Cypress
+cypress/integration/example*
+cypress/videos/**/*
+cypress/screenshots/**/*
+
+# Mongodb
+data/**/*

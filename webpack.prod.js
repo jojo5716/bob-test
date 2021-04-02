@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common.js');
 
 const ENTRY_POINTS = {
+    index: ['./example/index.js'],
 };
 
 const OUTPUT_CONFIG = {
@@ -41,14 +42,6 @@ const OPTIMIZATION = {
     ]
 };
 
-const HTML_CONFIG = {
-    filename: '../views/index.ejs',
-    template: './server/public/views/template.ejs',
-    title: 'Bob App',
-    minify: true,
-    hash: true,
-}
-
 module.exports = merge(common, {
     mode: 'production',
     entry: ENTRY_POINTS,
@@ -71,7 +64,6 @@ module.exports = merge(common, {
             analyzerMode: 'static'
         }),
         new webpack.NoEmitOnErrorsPlugin(),
-        new HtmlWebpackPlugin(HTML_CONFIG),
     ],
     optimization: OPTIMIZATION,
 });

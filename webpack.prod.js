@@ -10,7 +10,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common.js');
 
 const ENTRY_POINTS = {
-    publicIndex: ['./server/public/js/index.js'],
 };
 
 const OUTPUT_CONFIG = {

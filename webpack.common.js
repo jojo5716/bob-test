@@ -99,7 +99,6 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         alias: {
-            '@mocks': path.resolve(__dirname, 'mocks/'),
             '@src': path.resolve(__dirname, 'src/'),
             '@constants': path.resolve(__dirname, 'src/constants/'),
             '@core': path.resolve(__dirname, 'src/core/'),

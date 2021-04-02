@@ -5,6 +5,11 @@
       "baseUrl": "./",
       "paths": {
         "@src/*": ["src/*"],
+        "@constants/*": ["src/constants/*"],
+        "@core/*": ["src/core/*"],
+        "@views/*": ["src/views/*"],
+        "@api/*": ["src/api/*"],
+        "@components/*": ["src/components/*"]
       }
     },
     "exclude": ["node_modules", "dist"]
